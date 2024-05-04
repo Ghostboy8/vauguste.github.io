@@ -51,7 +51,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Developer', 'Designer', 'Freelancer'],
+    strings: ['Developpeur informatique', 'Designer', 'Freelancer','Mentor informatique'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -59,7 +59,7 @@ const typed = new Typed('.multiple-text', {
 });
 
 function SendMail(){
-    alert('jii')
+    
     var params ={
         from_name : document.getElementById('fullName').value,
         email_id : document.getElementById('email_id').value,
@@ -69,3 +69,19 @@ function SendMail(){
         alert("success" +" "+ res.status);
     })
 }
+
+// Get the elements
+const readMoreBtn = document.getElementById("read-more-btn");
+const moreText = document.getElementById("more-text");
+
+// Add event listener to the "Read More" button
+readMoreBtn.addEventListener("click", function() {
+    // Toggle the display of the additional text
+    if (moreText.style.display === "none") {
+        moreText.style.display = "block";
+        readMoreBtn.textContent = "Lire moins"; // Change button text to "Read Less"
+    } else {
+        moreText.style.display = "none";
+        readMoreBtn.textContent = "En savoir plus"; // Change button text back to "Read More"
+    }
+});

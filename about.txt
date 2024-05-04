@@ -1,0 +1,13 @@
+This favicon was generated using the following font:
+
+- Font Title: Leckerli One
+- Font Author: Copyright (c) 2011 Gesine Todt (www.gesine-todt.de hallo@gesine-todt.de), with Reserved Font Names "Leckerli"
+- Font Source: https://fonts.gstatic.com/s/leckerlione/v20/V8mCoQH8VCsNttEnxnGQ-1itLZxcBtItFw.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
+echo "# vauguste.git.io" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Ghostboy8/vauguste.git.io.git
+git push -u origin main
